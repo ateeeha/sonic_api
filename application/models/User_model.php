@@ -61,6 +61,14 @@ class User_model extends CI_Model{
     return $this->db->get();
   }
 
+  function get_all($table)
+  {
+    $this->db->from($table);
+
+    return $this->db->get();
+  }
+
+
   // hapus data person
   public function delete_person($id){
 
